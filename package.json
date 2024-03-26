@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "start": "lerna run --parallel start"
+  },
+  "packageManager": "yarn@3.2.4"
+}
